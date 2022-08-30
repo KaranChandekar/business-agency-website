@@ -1,0 +1,15 @@
+/* Common Styles  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style-type: none;
+  font-family: "Baloo Da 2", cursive;
+}
+
+/* Bye default 1rem == 16px  */
+html {
+  font-size: 62%; /* now 1rem == 10px */
+}
+/* End of Common Styles  */

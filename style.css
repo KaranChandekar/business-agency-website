@@ -121,8 +121,10 @@ html {
 }
 
 .nav-link {
-  font-family: "MADE Soulmaze", sans-serif;
-  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  text-transform: uppercase;
   letter-spacing: 0.3rem;
   color: #fff;
   margin: 2rem 0;

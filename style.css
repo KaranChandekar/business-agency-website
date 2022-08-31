@@ -18,7 +18,7 @@ html {
 /* Navbar */
 .navbar {
   width: 100%;
-  height: 8rem;
+  height: 6rem;
   background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: -8rem;
@@ -43,8 +43,8 @@ html {
 
 .navbar-logo {
   position: absolute;
-  top: 1.5rem;
-  left: 4rem;
+  top: 0.6rem;
+  left: 2rem;
 }
 
 .navbar-logo a {
@@ -67,7 +67,7 @@ html {
   height: 4rem;
   position: fixed;
   z-index: 500;
-  top: 2rem;
+  top: 0.8rem;
   right: 4rem;
   display: flex;
   flex-direction: column;
@@ -319,6 +319,7 @@ html {
   top: 5rem;
   right: 10rem;
   box-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.7);
+  overflow: hidden;
 }
 
 .video {
@@ -326,6 +327,7 @@ html {
   height: 100%;
   object-fit: cover;
   opacity: 0.3;
+  transition: opacity 0.3s;
 }
 
 .controls {
@@ -333,6 +335,12 @@ html {
   position: absolute;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
+  transform: translateY(calc(100% - 0.4rem));
+  transition: transform 0.4s;
+}
+
+.video-wrapper:hover .controls {
+  transform: translateY(0);
 }
 
 .video-bar-wrapper {
@@ -346,8 +354,9 @@ html {
 
 .video-bar {
   height: 100%;
-  width: 20%;
+  width: 0;
   background-color: #d30819;
+  transition: width 0.2s linear;
 }
 
 .buttons {

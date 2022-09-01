@@ -13,6 +13,10 @@
 html {
   font-size: 62%; /* now 1rem == 10px */
 }
+
+body {
+  overflow-x: hidden;
+}
 /* End of Common Styles  */
 
 /* Navbar */
@@ -426,7 +430,7 @@ html {
 .pricing-card {
   width: 25rem !important;
   height: 40rem !important;
-  margin: 1rem;
+  margin: 2rem;
   background-color: #181b1d;
   border-radius: 1rem;
   box-shadow: 2rem 2rem 6rem rgba(0, 0, 0, 0.7);
@@ -477,7 +481,7 @@ html {
 }
 
 .pricing-card-list li {
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 
 .list-free li {
@@ -516,7 +520,7 @@ html {
   font-size: 1.5rem;
   text-transform: uppercase;
   columns: #fff;
-  text-shadow: .3rem .3rem .6rem rgba(0, 0, 0, .5);
+  text-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
 }
 
 .btn-free {

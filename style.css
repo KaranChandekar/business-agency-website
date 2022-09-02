@@ -1,4 +1,4 @@
-/* Common Styles  */
+/* Common Styles */
 * {
   margin: 0;
   padding: 0;
@@ -9,21 +9,16 @@
   font-family: "Baloo Da 2", cursive;
 }
 
-/* Bye default 1rem == 16px  */
 html {
-  font-size: 62%; /* now 1rem == 10px */
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
-
-body {
-  overflow-x: hidden;
-}
-/* End of Common Styles  */
+/* End of Common Styles */
 
 /* Navbar */
 .navbar {
   width: 100%;
-  height: 6rem;
+  height: 8rem;
   background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: -8rem;
@@ -48,21 +43,20 @@ body {
 
 .navbar-logo {
   position: absolute;
-  top: 0.6rem;
-  left: 2rem;
+  top: 1.5rem;
+  left: 4rem;
 }
 
 .navbar-logo a {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
-  font-weight: 900;
   color: #eee;
   letter-spacing: 0.1rem;
 }
 
 .navbar-logo span {
   font-size: 3.5rem;
-  font-weight: 900;
+  font-weight: bold;
   color: #9e0e09;
   font-family: "Montserrat";
 }
@@ -72,7 +66,7 @@ body {
   height: 4rem;
   position: fixed;
   z-index: 500;
-  top: 0.8rem;
+  top: 2rem;
   right: 4rem;
   display: flex;
   flex-direction: column;
@@ -127,9 +121,7 @@ body {
 
 .nav-link {
   font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  font-size: 3rem;
-  text-transform: uppercase;
+  font-size: 4rem;
   letter-spacing: 0.3rem;
   color: #fff;
   margin: 2rem 0;
@@ -167,7 +159,7 @@ body {
 
 .banner-heading span {
   font-family: "Oswald", sans-serif;
-  font-size: 10rem;
+  font-size: 12rem;
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
@@ -230,7 +222,7 @@ body {
 }
 
 .banner-paragraph {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
@@ -256,8 +248,8 @@ body {
 }
 
 .banner-btn {
-  width: 25rem;
-  height: 5rem;
+  width: 30rem;
+  height: 6rem;
   background: linear-gradient(to right, #9b0e0e, #7a1010);
   color: #fff;
   font-size: 2rem;
@@ -282,15 +274,14 @@ body {
   position: absolute;
   top: 0;
   left: -100%;
-  transform: skew(-30deg);
+  transform: skewX(-30deg);
   transition: left 0.5s;
 }
 
 .banner-btn:hover::before {
   left: 100%;
 }
-
-/* End of Section 1  */
+/* End of Section 1 */
 
 /* Section 2 */
 .section-2 {
@@ -299,32 +290,36 @@ body {
   background-color: #222020;
   display: flex;
   align-items: center;
-  padding: 0 6rem;
+  padding: 0 10rem;
   position: relative;
 }
 
 .section-heading {
+  font-size: 10rem;
   font-family: "Oswald", sans-serif;
-  font-size: 7rem;
   font-weight: 300;
   color: #ddd;
-  margin-right: 3rem;
+  margin-right: 4rem;
 }
 
 .section-heading-line {
-  width: 10rem;
+  width: 15rem;
   height: 0.2rem;
   background-color: #ddd;
 }
 
 .video-wrapper {
-  width: 80rem;
-  height: 40rem;
+  width: 100rem;
+  height: 50rem;
   position: absolute;
   top: 5rem;
-  right: 10rem;
-  box-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.7);
+  right: 15rem;
+  box-shadow: 3rem 3rem 6rem rgba(0, 0, 0, 0.7);
   overflow: hidden;
+}
+
+.video-wrapper:hover .controls {
+  transform: translateY(0);
 }
 
 .video {
@@ -344,13 +339,9 @@ body {
   transition: transform 0.4s;
 }
 
-.video-wrapper:hover .controls {
-  transform: translateY(0);
-}
-
 .video-bar-wrapper {
   width: 100%;
-  height: 0.5rem;
+  height: 0.7rem;
   background-color: #000;
   position: absolute;
   top: 0;
@@ -365,7 +356,7 @@ body {
 }
 
 .buttons {
-  padding: 1.5rem 1rem 1rem 1rem;
+  padding: 2rem 1rem 1rem 1rem;
 }
 
 .buttons button {
@@ -375,40 +366,44 @@ body {
 }
 
 .buttons i {
-  font-size: 2.5rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2.8rem;
   color: #fff;
 }
 
 .section-2-paragraph {
-  width: 80rem;
+  width: 100rem;
   position: absolute;
-  bottom: 5rem;
-  right: 10rem;
-  font-size: 1.8rem;
+  bottom: 8rem;
+  right: 15rem;
+  font-size: 2rem;
+  line-height: 1.5;
   color: #ddd;
   border-top: 0.3rem double #aaa;
   border-bottom: 0.3rem double #aaa;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: justify;
   text-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.7);
-  line-height: 1.5;
 }
 
 .fa-quote-left {
   align-self: flex-start;
-  font-size: 4rem;
-  margin-bottom: 1rem;
+  font-size: 5rem;
+  color: #bbb;
+  margin-bottom: 2rem;
 }
 
 .fa-quote-right {
   align-self: flex-end;
-  font-size: 4rem;
-  margin-top: 1rem;
+  font-size: 5rem;
+  color: #bbb;
 }
+
 /* End of Section 2 */
 
 /* Section 3 */
@@ -418,20 +413,19 @@ body {
   background-color: #03070e;
   display: flex;
   align-items: center;
-  padding-left: 6rem;
+  padding-left: 10rem;
 }
 
 .pricing-cards-wrapper {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  padding: 1rem;
+  padding: 5rem;
 }
 
 .pricing-card {
-  width: 25rem !important;
-  height: 40rem !important;
-  margin: 2rem;
+  width: 28rem !important;
+  height: 45rem !important;
   background-color: #181b1d;
   border-radius: 1rem;
   box-shadow: 2rem 2rem 6rem rgba(0, 0, 0, 0.7);
@@ -476,51 +470,51 @@ body {
 
 .pricing-card-price {
   font-family: "Montserrat", sans-serif;
-  font-size: 5rem;
+  font-size: 7rem;
   font-weight: 300;
   color: #fff;
 }
 
 .pricing-card-list li {
-  margin-bottom: 0.3rem;
-}
-
-.list-free li {
-  color: #0da5d3;
-}
-
-.list-basic li {
-  color: #bdba0e;
-}
-
-.list-standard li {
-  color: #e23b3b;
-}
-
-.list-premium li {
-  color: #3be286;
+  margin-bottom: 0.5rem;
 }
 
 .pricing-card-list i {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   width: 3rem;
 }
 
 .pricing-card-list span {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 300;
   letter-spacing: 0.1rem;
 }
 
+.list-free {
+  color: #0da5d3;
+}
+
+.list-basic {
+  color: #bdba0e;
+}
+
+.list-standard {
+  color: #e23b3b;
+}
+
+.list-premium {
+  color: #3be286;
+}
+
 .pricing-card-btn {
-  width: 16rem;
-  height: 4rem;
+  width: 18rem;
+  height: 5rem;
   margin-bottom: 3rem;
-  border-radius: 1rem;
+  border-radius: 3rem;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
-  columns: #fff;
+  color: #fff;
   text-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
 }
 
@@ -540,6 +534,40 @@ body {
   background-color: #3be286;
 }
 
+.pricing-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+  border-radius: 1rem;
+}
+
+.pricing-card-back a {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.back-free {
+  background: linear-gradient(to right, #087285, #0da5d3);
+}
+
+.back-basic {
+  background: linear-gradient(to right, #946809, #bdba0e);
+}
+
+.back-standard {
+  background: linear-gradient(to right, #a10c14, #e23b3b);
+}
+
+.back-premium {
+  background: linear-gradient(to right, #0b7e48, #3be286);
+}
+
 /* End of Section 3 */
 
 /* Section 4 */
@@ -549,7 +577,7 @@ body {
   background-color: #171718;
   display: flex;
   align-items: center;
-  padding: 0 6rem;
+  padding: 0 10rem;
 }
 
 .contact-wrapper {
@@ -567,43 +595,42 @@ body {
 .contact-details div {
   width: 25rem;
   text-align: center;
-  margin: 2rem;
+  margin: 4rem;
 }
 
 .contact-details i {
-  font-size: 4rem;
+  font-size: 5rem;
   color: #7a1010;
 }
 
 .contact-details h3 {
   font-family: "Montserrat", serif;
-  text-transform: uppercase;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   margin: 2rem 0;
   color: #ccc;
 }
 
 .contact-details p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #aaa;
 }
 
 .contact-wrapper h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #ccc;
   text-transform: uppercase;
   margin-bottom: 3rem;
 }
 
 .contact-form {
-  width: 50rem;
+  width: 70rem;
   display: flex;
   flex-direction: column;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: #444;
   color: #eee;
   border: none;
@@ -632,7 +659,7 @@ body {
 }
 /* End of Section 4 */
 
-/* Footer  */
+/* Footer */
 .footer {
   width: 100%;
   height: 12rem;
@@ -640,13 +667,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 6rem;
+  padding: 0 10rem;
 }
 
 .footer-nav a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", serif;
   font-size: 2rem;
-  font-weight: 900;
   color: #ccc;
   margin-right: 3rem;
   letter-spacing: 0.1rem;
@@ -654,11 +680,11 @@ body {
 }
 
 .footer-nav a:hover {
-  color: #a62323;
+  color: #862323;
 }
 
 .copyright {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #ddd;
 }
-/* End of Footer  */
+/* End of Footer */

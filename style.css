@@ -12,6 +12,7 @@
 /* Bye default 1rem == 16px  */
 html {
   font-size: 62%; /* now 1rem == 10px */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -630,3 +631,34 @@ body {
   background-color: #5f0303;
 }
 /* End of Section 4 */
+
+/* Footer  */
+.footer {
+  width: 100%;
+  height: 12rem;
+  background-color: #202122;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+}
+
+.footer-nav a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #ccc;
+  margin-right: 3rem;
+  letter-spacing: 0.1rem;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #a62323;
+}
+
+.copyright {
+  font-size: 1.8rem;
+  color: #ddd;
+}
+/* End of Footer  */

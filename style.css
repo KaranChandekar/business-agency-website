@@ -536,40 +536,6 @@ html {
   background-color: #3be286;
 }
 
-.pricing-card-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: rotateY(180deg);
-  border-radius: 1rem;
-}
-
-.pricing-card-back a {
-  font-size: 2.5rem;
-  color: #fff;
-}
-
-.back-free {
-  background: linear-gradient(to right, #087285, #0da5d3);
-}
-
-.back-basic {
-  background: linear-gradient(to right, #946809, #bdba0e);
-}
-
-.back-standard {
-  background: linear-gradient(to right, #a10c14, #e23b3b);
-}
-
-.back-premium {
-  background: linear-gradient(to right, #0b7e48, #3be286);
-}
-
 /* End of Section 3 */
 
 /* Section 4 */
@@ -784,7 +750,7 @@ html {
   }
 
   .pricing-card {
-    margin-bottom: 3rem;
+    margin: 5rem;
   }
 
   .section-4 {
@@ -899,6 +865,10 @@ html {
 
   .contact-form {
     width: 60rem;
+  }
+
+  .footer {
+    height: 20rem;
   }
 }
 /* End of Responsive */

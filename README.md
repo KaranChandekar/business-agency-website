@@ -6,6 +6,10 @@ A fully responsive business agency website using html, css and javascript.
 - CSS3
 - JavaScript
 
+## Screenshot
+
+![Screenshot (202)](https://user-images.githubusercontent.com/93200960/215091397-2ff1ee52-7bfe-4f38-8144-d6e0b5669ed8.png)
+
 ## Demo
 https://user-images.githubusercontent.com/93200960/197354235-02b43f8b-5731-4b70-8ac6-8e59eaea0d01.mp4
 
